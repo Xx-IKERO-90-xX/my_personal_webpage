@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: halo_txt;
+    src: url(/txt/Halo.ttf);
+}
+
 body {
     background-image: url(/img/halo-infinite-master-chief-cartoon-3zxkmw0cnn6wgdes.jpg);
     background-size: cover();
@@ -8,7 +13,7 @@ body {
 
 .personal_info {
     margin: 10px;
-    background: rgb(94, 94, 94);
+    background: rgb(65, 65, 65);
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -20,6 +25,7 @@ body {
     border-radius: 10px;
     width: 270px;
     box-shadow: 5px 5px 5px rgb(0, 255, 85);
+    margin: auto;
 }
 .personal_info .informacion {
     margin: 10px;
@@ -27,9 +33,34 @@ body {
     width: 100%;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 255, 85);
 
 }
 .personal_info .informacion label {
     color: white;
     font-size: 25px;
+}
+.personal_info .col-lg-5 {
+    text-align: center;
+}
+.personal_info .contact {
+    margin: 10px;
+    background:rgb(36, 36, 36);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 255, 85);
+}
+.personal_info .contact label {
+    color: white;
+    font-size: 25px;
+}
+.title h1 {
+    text-align: center;
+    font-family: halo_txt;
+    font-size: 70px;
+    font-weight: bold;
+    background:rgba(0, 255, 85, 0.637);
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
 }
