@@ -18,6 +18,11 @@
             background-size: cover();
             background-attachment: fixed;
             background-position: center;
+            height: 100%;
+        }
+
+        .main {
+            padding: 10px;
         }
     </style>
 </head>
@@ -41,8 +46,11 @@
                         Mi actitud a persar de ser determinada es autodidacta lo que significa que me encanta aprender
                         por mi cuenta y mejorar la mayor cantidad de aspectos personales posibles.
                         <br>
-                        A pesar de haber tenido un pasado horrible por temas personales y familiares, y de no haber tenido la infancia que me merecía desde la muerte de mi madre cuando tenía 8 años.<br>
-                        Intento mantener una actitud positiva y contructiva con el fin de mostrarme tanto a mi mismo y a mi madre de lo que valgo y lo lejos que puedo llegar, intentando convertirme en un chico totalmente diferente y mejor.<br>
+                        A pesar de haber tenido un pasado horrible por temas personales y familiares, y de no haber
+                        tenido la infancia que me merecía desde la muerte de mi madre cuando tenía 8 años.<br>
+                        Intento mantener una actitud positiva y contructiva con el fin de mostrarme tanto a mi mismo y a
+                        mi madre de lo que valgo y lo lejos que puedo llegar, intentando convertirme en un chico
+                        totalmente diferente y mejor.<br>
                     </p>
 
                 </div>
@@ -53,70 +61,149 @@
             <button id="btn_main" class="btn btn-success">Principal</button>
             <button id="btn_proyect" class="btn btn-success">Mi Mayor Proyecto</button>
             <button id="btn_academy" class="btn btn-success">Expediente Académico</button>
-
         </nav>
         <br><br>
         <div id="content">
 
         </div>
+        <br><br>
+        <template id="main_template">
+            <div class="main bg-neutral shadow-lg shadow-green-500/50" id="mainContent">
+                <h1>Contenido Principal</h1>
+
+            </div>
+        </template>
+        <template id="panagaming_template">
+            <div class="bg-neutral shadow-lg shadow-green-500/50" id="panaGamingContent">
+
+
+            </div>
+
+        </template>
+        <template id="academy_template">
+            <div id="academyContent" class="overflow-x-auto shadow-green-500/50">
+                <div class="bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        <h1 style="font-size: 30px;">FP GRADO MEDIO</h1>
+                        <h2>Sistemas Microinformáticos y Redes</h2>
+                        <button id="btn_gm1" class="btn btn-sm btn-accent">1</button>
+                        <button id="btn_gm2" class="btn btn-sm btn-accent">2</button>
+                    </div>
+                    <div id="fp_content" style="padding: 10px;">
+                        <div id="grado_medio" style="padding: 10px;">
+                            <div id="gm_1" class="bg-neutral shadow-lg shadow-green-500/50">
+                                <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Asignatura</th>
+                                            <th>Año</th>
+                                            <th>Calificación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>Montaje y Manetimiento de Quipos</td>
+                                            <td>Primero</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>Redes Locales</td>
+                                            <td>Primero</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Aplicaciones Ofimaticas</td>
+                                            <td>Primero</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Sistemas Operativos Monopuestos</td>
+                                            <td>Primero</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Formación y orientación laboral</td>
+                                            <td>Primero</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Inglés Técnico</td>
+                                            <td>Primero</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <br><br>
+                            <div class="bg-neutral shadow-lg shadow-green-500/50">
+                                <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Asignatura</th>
+                                            <th>Año</th>
+                                            <th>Calificación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>7</th>
+                                            <td>Servicios en Red</td>
+                                            <td>Segundo</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>8</th>
+                                            <td>Sistemas Operativos En Red</td>
+                                            <td>Segundo</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>9</th>
+                                            <td>Aplicaciones Web</td>
+                                            <td>Segundo</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>10</th>
+                                            <td>Seguridad Informática</td>
+                                            <td>Segundo</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>11</th>
+                                            <td>Iniciativa Emprendedora</td>
+                                            <td>Segundo</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>12</th>
+                                            <td>Inglés Técnico</td>
+                                            <td>Segundo</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </template>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="/scripts/main.js"></script>
     </div>
 </body>
 
-
-<template id="main_template">
-    <div class="main bg-neutral shadow-lg shadow-green-500/50" id="mainContent">
-        <h1>Contenido Principal</h1>
-
-    </div>
-</template>
-<template id="panagaming_template">
-    <div class="bg-neutral shadow-lg shadow-green-500/50" id="panaGamingContent">
-
-
-    </div>
-
-</template>
-<template id="academy_template">
-    <div id="academyContent" class="overflow-x-auto bg-neutral shadow-lg shadow-green-500/50">
-        <table class="table table-xs">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>company</th>
-              <th>location</th>
-              <th>Last Login</th>
-              <th>Favorite Color</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>1</th>
-              <td>Cy Ganderton</td>
-              <td>Quality Control Specialist</td>
-              <td>Littel, Schaden and Vandervort</td>
-              <td>Canada</td>
-              <td>12/16/2020</td>
-              <td>Blue</td>
-            </tr>
-            
-          </tbody>
-          <tfoot>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>company</th>
-              <th>location</th>
-              <th>Last Login</th>
-              <th>Favorite Color</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-</template>
-
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-<script type="module" src="/scripts/main.js"></script>
 </html>
