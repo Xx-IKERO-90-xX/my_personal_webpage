@@ -67,12 +67,16 @@
 
         </div>
         <br><br>
+
+
+
         <template id="main_template">
             <div class="main bg-neutral shadow-lg shadow-green-500/50" id="mainContent">
                 <h1>Contenido Principal</h1>
 
             </div>
         </template>
+
         <template id="panagaming_template">
             <div class="bg-neutral shadow-lg shadow-green-500/50" id="panaGamingContent">
 
@@ -80,6 +84,7 @@
             </div>
 
         </template>
+
         <template id="academy_template">
             <div id="academyContent" class="overflow-x-auto shadow-green-500/50">
                 <div class="bg-base-200">
@@ -91,115 +96,265 @@
                     </div>
                     <div id="fp_content" style="padding: 10px;">
                         <div id="grado_medio" style="padding: 10px;">
-                            <div id="gm_1" class="bg-neutral shadow-lg shadow-green-500/50">
-                                <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Asignatura</th>
-                                            <th>Año</th>
-                                            <th>Calificación</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>Montaje y Manetimiento de Quipos</td>
-                                            <td>Primero</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>Redes Locales</td>
-                                            <td>Primero</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>Aplicaciones Ofimaticas</td>
-                                            <td>Primero</td>
-                                            <td>8</td>
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>Sistemas Operativos Monopuestos</td>
-                                            <td>Primero</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td>Formación y orientación laboral</td>
-                                            <td>Primero</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>Inglés Técnico</td>
-                                            <td>Primero</td>
-                                            <td>5</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <br><br>
-                            <div class="bg-neutral shadow-lg shadow-green-500/50">
-                                <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Asignatura</th>
-                                            <th>Año</th>
-                                            <th>Calificación</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>Servicios en Red</td>
-                                            <td>Segundo</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td>Sistemas Operativos En Red</td>
-                                            <td>Segundo</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <th>9</th>
-                                            <td>Aplicaciones Web</td>
-                                            <td>Segundo</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <th>10</th>
-                                            <td>Seguridad Informática</td>
-                                            <td>Segundo</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <th>11</th>
-                                            <td>Iniciativa Emprendedora</td>
-                                            <td>Segundo</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <th>12</th>
-                                            <td>Inglés Técnico</td>
-                                            <td>Segundo</td>
-                                            <td>7</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            
                         </div>
                         <br><br>
+                        <script type="module" src="/scripts/academy/gmedio.js"></script>
+                    </div>
+                </div>
+                <br><br>
+                <div id="academyContent" class="overflow-x-auto shadow-green-500/50">
+                    <div class="bg-base-200">
+                        <div class="collapse-title text-xl font-medium">
+                            <h1 style="font-size: 30px;">FP GRADO SUPERIOR</h1>
+                            <h2>Desarrollo de Aplicaciones Web</h2>
+                            <button id="btn_gs1" class="btn btn-sm btn-accent">1</button>
+                            <button id="btn_gs2" class="btn btn-sm btn-accent">2</button>
+                        </div>
+                        <div id="fp_content" style="padding: 10px;">
+                            <div id="grado_superior" style="padding: 10px;">
+                                
+                            </div>
+                            <br><br>
+                            <script type="module" src="/scripts/academy/gsuperior.js"></script>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br><br>
+        </template>
     </div>
+
+
+
+
+
+    <template id="gm1_template">
+        <div id="gm1_content" class="bg-neutral shadow-lg shadow-green-500/50">
+            <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Asignatura</th>
+                        <th>Año</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Montaje y Manetimiento de Quipos</td>
+                        <td>Primero</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Redes Locales</td>
+                        <td>Primero</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Aplicaciones Ofimaticas</td>
+                        <td>Primero</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Sistemas Operativos Monopuestos</td>
+                        <td>Primero</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Formación y orientación laboral</td>
+                        <td>Primero</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Inglés Técnico</td>
+                        <td>Primero</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </template>
+    <template id="gm2_template">
+        <div id="gm2_content" class="bg-neutral shadow-lg shadow-green-500/50">
+            <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Asignatura</th>
+                        <th>Año</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>7</th>
+                        <td>Servicios en Red</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Sistemas Operativos En Red</td>
+                        <td>Segundo</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Aplicaciones Web</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Seguridad Informática</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Iniciativa Emprendedora</td>
+                        <td>Segundo</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Inglés Técnico</td>
+                        <td>Segundo</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </template>
+
+
+
+
+
+    <template id="gs1_template">
+        <div id="gs1_content" class="bg-neutral shadow-lg shadow-green-500/50">
+            <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Asignatura</th>
+                        <th>Año</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Programación</td>
+                        <td>Primero</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Entornos de Desarrollo</td>
+                        <td>Primero</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Base de Datos</td>
+                        <td>Primero</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Lenguaje de Marcas</td>
+                        <td>Primero</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Sistemas Informáticos</td>
+                        <td>Primero</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Inglés Técnico</td>
+                        <td>Primero</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Formación y Orientación Laboral</td>
+                        <td>Primero</td>
+                        <td>9 (convalidado)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </template>
+    <template id="gs2_template">
+        <div id="gs2_content" class="bg-neutral shadow-lg shadow-green-500/50">
+            <table class="overflow-x-auto table table-xs shadow-lg bg-neutral">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Asignatura</th>
+                        <th>Año</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>8</th>
+                        <td>Desarrollo Web en Entorno Cliente</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Desarrollo Web en Entorno Servidor</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Diseño de Interfaces Web</td>
+                        <td>Segundo</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Despliegue de Aplicaciones Web</td>
+                        <td>Segundo</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Inglés Técnico</td>
+                        <td>Segundo</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>Iniciativa Emprededora</td>
+                        <td>Segundo</td>
+                        <td>7 (Convalidado)</td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Proyecto Final de Grado Superior</td>
+                        <td>Segundo</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </template>
+
     <script
         src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="/scripts/main.js"></script>
