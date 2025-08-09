@@ -18,35 +18,80 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            height: 100%;
-        }
-
-        .navbar {
-            background-image: url(/img/hexagon-green-tiled-minimalism-wallpaper-preview.jpg);
+            background-repeat: repeat;
+            height: 100vh;
         }
 
         .main {
-            padding: 10px;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <header class="navbar bg-base-300">
-        <div class="flex-1">
-            <a class="btn btn-ghost text-2xl"><strong>THE_IKERO90</strong></a>
+    <div class="main h-vh mx-auto container">
+        <br><br>
+        <div style="text-align: center;"
+            class="p-3 shadow-lg shadow-green-500 rounded mx-auto text-center bg-base-100 shadow-sm">
+            <button class="mx-1 btn btn-success"><strong>Inicio</strong></button>
+            <button class="mx-1 btn btn-success"><strong>Educación</strong></button>
+            <button class="mx-1 btn btn-success"><strong>Proyectos</strong></button>
+            <button class="mx-1 btn btn-success"><strong>Contactos</strong></button>
         </div>
-        <div class="flex-none mx-1">
-            <button class="mx-1 btn btn-success">Sobre Mi</button>
-            <button class="mx-1 btn btn-success">Educación</button>
-            <button class="mx-1 btn btn-success">Proyectos</button>
-            <button class="mx-1 btn btn-success">Abilidades</button>
-            <button class="mx-1 btn btn-success">Contacto</button>
-        </div>
-    </header>
-    <main style="height: 100vh;">
+        <br><br>
+        <div id="content">
 
-    </main>
+        </div>
+    </div>
 </body>
 
 </html>
+
+
+<template id="main-template">
+    <div id="main-content" class="bg-base-200 rounded shadow-lg shadow-green-500">
+        <div class="grid lg:grid-cols-3 gap-4 p-4 flex-col lg:flex-row">
+            <div class="mx-auto text-center">
+                <img src="/img/mi_foto.png" alt="Iker Javier Hernandez"
+                    class="w-60 mx-auto max-w-sm rounded-lg shadow-green-500 shadow-lg" />
+                <br><br>
+                <a class="kofi-btn" href="https://ko-fi.com/ikerjavierhernandez" target="_blank" rel="noopener noreferrer"
+                    aria-label="Invítame un café en Ko-fi">
+                    <span class="kofi-logo">☕</span>
+                    <span class="kofi-text">
+                        Invítame un café
+                        <small>Apoya mi trabajo</small>
+                    </span>
+                </a>
+            </div>
+            <div class=" ml-10 lg:col-span-2">
+                <h1 class="text-5xl font-bold">Iker Javier Hernandez</h1>
+                <hr class="my-4 border-green-500">
+                <div class="text-2xl ml-5">
+                    <div class="badge badge-success"><strong>Desarrollador Web Full-Stack</strong></div>
+                    <div class="badge badge-success"><strong>Ciberseguridad</strong></div>
+                    <div class="badge badge-success"><strong>Lider de Proyectos</strong></div>
+                </div>
+                <div>
+                    <p class="py-6">
+                        Soy Iker Javier Hernandez también conocido como Ikero90, un apasionado de la programación y el
+                        desarrollo web. Me encanta crear aplicaciones y sitios web que sean funcionales y atractivos.
+                        Siempre estoy aprendiendo nuevas tecnologías y buscando mejorar mis habilidades.
+                    </p>
+                    <img src="/img/386745.jpg" class="w-60 max-w-sm rounded-lg shadow-green-500 shadow-lg" />
+                    <br>
+                    <p class="py-2">
+                        Soy una persona curiosa y creativa, siempre buscando nuevos desafíos. Me gusta trabajar en
+                        equipo,
+                        hacer amigos y aprender de los demás. Personalmente soy una persona tranquila, amable, leal,
+                        optimista y motivado.
+
+                        Tengo mucha experiecia en cuanto a parte del desarrollo web, tambien en ciberseguridad y destaco
+                        en el liderazgo de proyectos ya que actualemte soy lider de una comunidad muy ambiciosa con
+                        proyectos muy interesantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
