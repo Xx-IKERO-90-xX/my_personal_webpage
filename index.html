@@ -22,6 +22,14 @@
             height: 100vh;
         }
 
+        html {
+            background-image: url(/img/118a7860-e33c-47e0-984c-94f647be8573.png);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: repeat;
+        }
+
         .main {
             height: 100vh;
         }
@@ -33,65 +41,136 @@
         <br><br>
         <div style="text-align: center;"
             class="p-3 shadow-lg shadow-green-500 rounded mx-auto text-center bg-base-100 shadow-sm">
-            <button class="mx-1 btn btn-success"><strong>Inicio</strong></button>
-            <button class="mx-1 btn btn-success"><strong>Educación</strong></button>
-            <button class="mx-1 btn btn-success"><strong>Proyectos</strong></button>
-            <button class="mx-1 btn btn-success"><strong>Contactos</strong></button>
+            <button id="btn-main" class="mx-1 btn btn-success"><strong>Inicio</strong></button>
+            <button id="btn-education" class="mx-1 btn btn-success"><strong>Formación</strong></button>
+            <button id="btn-proyectos" class="mx-1 btn btn-success"><strong>Proyectos</strong></button>
+            <button id="btn-contacts" class="mx-1 btn btn-success"><strong>Habilidades</strong></button>
         </div>
         <br><br>
-        <div id="content">
+        <div class="bg-base-200 rounded shadow-lg shadow-green-500">
+            <div class="grid lg:grid-cols-3 gap-4 p-4 flex-col lg:flex-row">
+                <div class="mx-auto text-center">
+                    <img src="/img/mi_foto.png" alt="Iker Javier Hernandez"
+                        class="w-60 mx-auto max-w-sm rounded-lg shadow-green-500 shadow-lg" />
+                    <br><br>
+                    <a class="kofi-btn" href="https://ko-fi.com/ikerjavierhernandez" target="_blank"
+                        rel="noopener noreferrer" aria-label="Invítame un café en Ko-fi">
+                        <span class="kofi-logo">☕</span>
+                        <span class="kofi-text">
+                            Invítame un café
+                            <small>Apoya mi trabajo</small>
+                        </span>
+                    </a>
+                </div>
+                <div id="content" class="ml-10 lg:col-span-2 gap-4 p-4 lg:flex-row">
+
+                </div>
+            </div>
+
 
         </div>
-    </div>
 </body>
 
 </html>
 
 
 <template id="main-template">
-    <div id="main-content" class="bg-base-200 rounded shadow-lg shadow-green-500">
-        <div class="grid lg:grid-cols-3 gap-4 p-4 flex-col lg:flex-row">
-            <div class="mx-auto text-center">
-                <img src="/img/mi_foto.png" alt="Iker Javier Hernandez"
-                    class="w-60 mx-auto max-w-sm rounded-lg shadow-green-500 shadow-lg" />
-                <br><br>
-                <a class="kofi-btn" href="https://ko-fi.com/ikerjavierhernandez" target="_blank" rel="noopener noreferrer"
-                    aria-label="Invítame un café en Ko-fi">
-                    <span class="kofi-logo">☕</span>
-                    <span class="kofi-text">
-                        Invítame un café
-                        <small>Apoya mi trabajo</small>
-                    </span>
-                </a>
-            </div>
-            <div class=" ml-10 lg:col-span-2">
-                <h1 class="text-5xl font-bold">Iker Javier Hernandez</h1>
-                <hr class="my-4 border-green-500">
-                <div class="text-2xl ml-5">
-                    <div class="badge badge-success"><strong>Desarrollador Web Full-Stack</strong></div>
-                    <div class="badge badge-success"><strong>Ciberseguridad</strong></div>
-                    <div class="badge badge-success"><strong>Lider de Proyectos</strong></div>
-                </div>
-                <div>
-                    <p class="py-6">
-                        Soy Iker Javier Hernandez también conocido como Ikero90, un apasionado de la programación y el
-                        desarrollo web. Me encanta crear aplicaciones y sitios web que sean funcionales y atractivos.
-                        Siempre estoy aprendiendo nuevas tecnologías y buscando mejorar mis habilidades.
-                    </p>
-                    <img src="/img/386745.jpg" class="w-60 max-w-sm rounded-lg shadow-green-500 shadow-lg" />
-                    <br>
-                    <p class="py-2">
-                        Soy una persona curiosa y creativa, siempre buscando nuevos desafíos. Me gusta trabajar en
-                        equipo,
-                        hacer amigos y aprender de los demás. Personalmente soy una persona tranquila, amable, leal,
-                        optimista y motivado.
+    <div id="main-content">
+        <h1 class="text-5xl font-bold">Iker Javier Hernandez</h1>
+        <hr class="my-4 border-green-500">
+        <div class="text-2xl ml-5">
+            <div class="badge badge-success"><strong>Desarrollador Web Full-Stack</strong></div>
+            <div class="badge badge-success"><strong>Ciberseguridad</strong></div>
+            <div class="badge badge-success"><strong>Lider de Proyectos</strong></div>
+        </div>
+        <div>
+            <p class="py-6">
+                Soy Iker Javier Hernandez también conocido como Ikero90, un apasionado de la programación y el
+                desarrollo web. Me encanta crear aplicaciones y sitios web que sean funcionales y atractivos.
+                Siempre estoy aprendiendo nuevas tecnologías y buscando mejorar mis habilidades.
+            </p>
+            <img src="/img/386745.jpg" class="w-60 max-w-sm rounded-lg shadow-green-500 shadow-lg" />
+            <br>
+            <p class="py-2">
+                Soy una persona curiosa y creativa, siempre buscando nuevos desafíos. Me gusta trabajar en
+                equipo,
+                hacer amigos y aprender de los demás. Personalmente soy una persona tranquila, amable, leal,
+                optimista y motivado.
 
-                        Tengo mucha experiecia en cuanto a parte del desarrollo web, tambien en ciberseguridad y destaco
-                        en el liderazgo de proyectos ya que actualemte soy lider de una comunidad muy ambiciosa con
-                        proyectos muy interesantes.
-                    </p>
+                Tengo mucha experiecia en cuanto a parte del desarrollo web, tambien en ciberseguridad y destaco
+                en el liderazgo de proyectos ya que actualemte soy lider de una comunidad muy ambiciosa con
+                proyectos muy interesantes.
+            </p>
+        </div>
+    </div>
+</template>
+
+
+<template id="education-template">
+    <div id="education-content" class="bg-base-200">
+        <div>
+            <h1 class="text-5xl font-bold">Formación</h1>
+            <hr class="my-4 border-green-500">
+            En esta sección encontrarás información sobre mi formación académica y profesional.
+            <br><br>
+            <h2 class="text-3xl font-bold mt-4">Educación</h2>
+            <hr class="my-4 border-green-500">
+            <div class="flex w-full">
+                <div class="bg-base-300 rounded-box grow p-4">
+                    <div class="flex">
+                        <div class="text-left">
+                            <h2 class="card-title">FP Grado Medio</h2>
+                            <p class="text-sm">Sistemas Microinformaticos y Redes</p>
+                        </div>
+                        <div class="text-right ml-auto">
+                            <p class="text-sm">2020 - 2022</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-xs btn-success text-bold">Más Información</button>
                 </div>
             </div>
+            <br>
+            <div class="flex w-full">
+                <div class="bg-base-300 rounded-box grow p-4">
+                    <div class="flex">
+                        <div class="text-left">
+                            <h2 class="card-title">FP Grado Superior</h2>
+                            <p class="text-sm">Desarrollo de Aplicaciones Web</p>
+                        </div>
+                        <div class="text-right ml-auto">
+                            <p class="text-sm">2022 - 2024</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-xs btn-success text-bold">Más Información</button>
+                </div>
+            </div>
+            <br>
+            <div class="flex w-full">
+                <div class="bg-base-300 rounded-box grow p-4">
+                    <div class="flex">
+                        <div class="text-left">
+                            <h2 class="card-title">Curso de Especialización</h2>
+                            <p class="text-sm">Ciberseguridad</p>
+                        </div>
+                        <div class="text-right ml-auto">
+                            <p class="text-sm">2024 - 2025</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-xs btn-success text-bold">Más Información</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold mt-4">Idiomas</h2>
+            <hr class="my-4 border-green-500">
+            <h3 class="text-1xl font-bold">Español</h3>
+            <progress class="progress progress-accent w-56" value="100" max="100"></progress>
+            <h3 class="text-1xl font-bold">Inglés</h3>
+            <progress class="progress progress-accent w-56" value="70" max="100"></progress>
+            <h3 class="text-1xl font-bold">Valenciano</h3>
+            <progress class="progress progress-accent w-56" value="50" max="100"></progress>
+            <h3 class="text-1xl font-bold">Francés</h3>
+            <progress class="progress progress-accent w-56" value="10" max="100"></progress>
         </div>
     </div>
 </template>
