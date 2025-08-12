@@ -1,36 +1,36 @@
-
 @font-face {
-    font-family: halo_txt;
-    src: url(/txt/Halo.ttf);
+  font-family: halo_txt;
+  src: url(/txt/Halo.ttf);
 }
 
 body {
-    background-image: url(/img/halo-infinite-master-chief-cartoon-3zxkmw0cnn6wgdes.jpg);
-    background-size: cover();
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
+  background-image: url(/img/halo-infinite-master-chief-cartoon-3zxkmw0cnn6wgdes.jpg);
+  background-size: cover();
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 
-:root{
-  --neon: #00ff66; /* verde neón */
+:root {
+  --neon: #00ff66;
+  /* verde neón */
   --neon-dark: #0a2d18;
   --accent: #0cff9a;
-  --glass: rgba(255,255,255,0.04);
+  --glass: rgba(255, 255, 255, 0.04);
   --radius: 14px;
-  --shadow-glow: 0 6px 30px rgba(0,255,102,0.08), 0 0 18px rgba(0,255,102,0.12) inset;
+  --shadow-glow: 0 6px 30px rgba(0, 255, 102, 0.08), 0 0 18px rgba(0, 255, 102, 0.12) inset;
 }
 
-.kofi-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-  padding:14px 20px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.18));
+.kofi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.18));
   border-radius: var(--radius);
   color: var(--neon);
-  text-decoration:none;
-  border: 1px solid rgba(0,255,102,0.08);
+  text-decoration: none;
+  border: 1px solid rgba(0, 255, 102, 0.08);
   box-shadow: var(--shadow-glow);
   backdrop-filter: blur(6px);
   transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
@@ -40,45 +40,70 @@ body {
 }
 
 /* logo circular */
-.kofi-logo{
-  display:inline-grid;
-  place-items:center;
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  background: radial-gradient(circle at 30% 30%, rgba(0,255,102,0.14), rgba(0,0,0,0.08));
+.kofi-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 102, 0.14), rgba(0, 0, 0, 0.08));
   color: #05140a;
-  font-weight:700;
-  font-size:22px;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.02);
-  box-shadow: 0 6px 20px rgba(0,255,102,0.06), 0 0 18px rgba(0,255,102,0.12);
+  font-weight: 700;
+  font-size: 22px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.02);
+  box-shadow: 0 6px 20px rgba(0, 255, 102, 0.06), 0 0 18px rgba(0, 255, 102, 0.12);
   transform: translateZ(0);
 }
 
 /* texto principal */
-.kofi-text{
-  display:flex;
-  flex-direction:column;
-  line-height:1;
+.kofi-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
-.kofi-text > small{
-  color: rgba(173,255,200,0.85);
-  font-size:12px;
-  margin-top:6px;
-  opacity:0.9;
+
+.kofi-text>small {
+  color: rgba(173, 255, 200, 0.85);
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: 0.9;
 }
 
 /* hover / active */
-.kofi-btn:hover{
+.kofi-btn:hover {
   transform: translateY(-6px) scale(1.02);
   filter: saturate(1.2);
-  box-shadow: 0 20px 60px rgba(0,255,102,0.12), 0 0 30px rgba(0,255,102,0.18);
+  box-shadow: 0 20px 60px rgba(0, 255, 102, 0.12), 0 0 30px rgba(0, 255, 102, 0.18);
 }
-.kofi-btn:active{ transform: translateY(-2px) scale(0.995); }
+
+.kofi-btn:active {
+  transform: translateY(-2px) scale(0.995);
+}
 
 /* small screens */
-@media (max-width:480px){
-  .kofi-text > small{ display:none; }
-  .kofi-btn{ padding:10px 12px; gap:10px; }
-  .kofi-logo{ width:40px; height:40px; font-size:18px; }
+@media (max-width:480px) {
+  .kofi-text>small {
+    display: none;
+  }
+
+  .kofi-btn {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .kofi-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.pg-logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/pg-logo.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

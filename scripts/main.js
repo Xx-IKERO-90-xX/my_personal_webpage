@@ -9,8 +9,18 @@ function clear() {
     contentDiv.innerHTML = "";
 }
 
+function invokeProjectsTemplate() {
+    clear();
+
+    let projectsTemplate = document.getElementById('proyects-template').content.cloneNode(true);
+    let content = projectsTemplate.getElementById('proyects-content');
+    
+    contentDiv.append(content);
+}
+
 function invokeEducationTemplate() {
     clear();
+
     let educationTemplate = document.getElementById('education-template').content.cloneNode(true);
     let content = educationTemplate.getElementById('education-content');
     
@@ -28,5 +38,6 @@ function invokeMainTemplate() {
 
 btnMain.addEventListener('click', invokeMainTemplate);
 btnEducation.addEventListener('click', invokeEducationTemplate);
+btnProyectos.addEventListener('click', invokeProjectsTemplate);
 
 invokeMainTemplate();
